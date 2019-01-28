@@ -1,1 +1,2 @@
-# bckc - Best Choice Kitchen Cabinets
+# BCKC - Best Choice Kitchen Cabinets
+Best Choice Kitchen Cabinets Repo
