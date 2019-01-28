@@ -1,0 +1,177 @@
+@import "skeleton";
+@import "partials/queries";
+@import "partials/contact";
+
+
+// Global Var //
+$orange: #F7941E;
+$grey: #818285;
+$light-grey: #b3b3b3;
+$light-grey-2: #e6e6e6;
+$white: #F3F3F3;
+$copper-red: #b87333;
+$gold: #DAA45C;
+$goldish: #FFF4CA;
+$orangish: #D46E50;
+$yellow-var:#F0DDB3;
+$brown: #403A34;
+$blue: #00B8CA;
+
+// Mixin //
+$prefix:'-moz-', '-webkit-', '-o-', '-ms-', '';
+// ********************
+// fadeIn
+// ********************
+@mixin keyframe-fadeIn {
+  0%   { opacity:0; }
+  100% { opacity:1; }
+}
+@-moz-keyframes fadeIn {
+  @include keyframe-fadeIn;
+}
+@-webkit-keyframes fadeIn {
+  @include keyframe-fadeIn;
+}
+@-o-keyframes fadeIn {
+  @include keyframe-fadeIn;
+}
+@-ms-keyframes fadeIn {
+  @include keyframe-fadeIn;
+}
+@keyframes fadeIn {
+  @include keyframe-fadeIn;
+}
+@mixin fadeIn( $arg ) {
+  $keyframe-name:fadeIn;
+  $duration:$arg;
+  @each $p in $prefix {
+    #{$p}animation:$keyframe-name $duration;
+  }
+}
+
+body {
+    @include fadeIn(1s);
+}
+
+.main-header {
+    height: 440px;
+    background-color: $light-grey-2;
+    .pusher {
+        padding-top: 1.8rem;
+    }
+    nav {
+        .flex {
+         display: flex;
+         padding-top: 1rem;
+         flex-wrap: wrap;
+         a {
+              flex:1;
+              list-style-type: none;
+              text-decoration: none;
+              text-align: center;
+              margin-top: 2px;
+              padding-top: 4px;
+              color: $grey;
+              &:hover {
+                  color: $blue;
+                 -webkit-transition-duration: 0.5s;
+                transition-duration: 0.5s;
+                -webkit-transition-property: color;
+                transition-property: color;
+                  border-radius: 16px;
+              }
+              .sub-menu {
+                  list-style-type: none;
+                text-decoration: none;
+                flex-direction: column;
+              }
+             li {
+                border-left: 2px solid $grey;
+                // color: $grey;
+               font-family: 'Raleway';
+               font-weight: bold;
+                // margin-top: -1px;
+                letter-spacing: 2px;
+                padding-top: 4px;
+             }
+             
+         }
+     }
+    }
+     
+    .nav-header {
+        height: 360px;
+        border-top:4px double $light-grey;
+        border-bottom:4px double $light-grey;
+        text-align: center;
+        a {
+            text-decoration: none;
+        }
+        img {
+            margin-top: 12%;
+        }
+    .nav-logo {
+        margin-left: 10%;
+          #bc-title {
+        color: $grey;
+        font-family: 'Italiana';
+        font-size: 3.8em;
+        letter-spacing: 2px;
+        position: relative;
+        top: -5vh;
+        // margin-left: 10px;
+    }
+    #kc-title {
+        color: $orange;
+        font-family: 'Italianno';
+        font-size: 3.5rem;
+        font-weight: 600;
+        letter-spacing: 2px;
+        position: relative;
+        top: -1rem;
+        left: -26%;
+        }
+    }
+       
+    }
+   
+}
+
+// Slider Container //
+.carousel-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+.mySlides {
+  display: none;
+}
+.prev {
+  cursor: pointer;
+  position: absolute;
+  top: 80%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  right: 
+}
+.next {
+    cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+}

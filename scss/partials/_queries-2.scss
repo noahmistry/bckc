@@ -1,0 +1,63 @@
+// For Phone Only // 
+
+#bc-title {
+  @include for-phone-only {
+    margin-left: 2rem;
+  }
+}
+#kc-title {
+  @include for-phone-only {
+    display: none;
+  }
+}
+.headings {
+  #main-heading {
+    margin-top: -2.6rem;
+  }
+}
+
+.contact-section {
+  @include for-phone-only {
+    margin-top: 35% !important;
+  } 
+  h1 {
+    @include for-phone-only {
+    display: none;
+  }
+  }
+  
+}
+
+//  End //
+
+// Tablet Portrait // 
+#kc-title {
+  @include for-tablet-portrait-up {
+    position: relative;
+    left: -25% !important;
+  }
+}
+.contact-section {
+  @include for-tablet-portrait-up {
+    margin-top: 8% !important;
+  }
+}
+
+
+// Tablet Landscape //
+#kc-title {
+  @include for-tablet-landscape-up {
+    position: relative;
+    left: -18% !important;
+  }
+}
+// End //
+
+// Desktops Up //
+#kc-title {
+  @include for-desktop-up {
+    position: relative;
+    left: -15% !important;
+  }
+}
+// End //

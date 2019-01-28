@@ -1,0 +1,81 @@
+// Global Var //
+$orange: #F7941E;
+$grey: #818285;
+$light-grey: #b3b3b3;
+$light-grey-2: #e6e6e6;
+$white: #F3F3F3;
+$copper-red: #b87333;
+$gold: #DAA45C;
+$goldish: #FFF4CA;
+$orangish: #D46E50;
+$yellow-var:#F0DDB3;
+$brown: #403A34;
+$blue: #00B8CA;
+
+// Mixin //
+$prefix:'-moz-', '-webkit-', '-o-', '-ms-', '';
+// ********************
+// fadeIn
+// ********************
+@mixin keyframe-fadeIn {
+  0%   { opacity:0; }
+  100% { opacity:1; }
+}
+@-moz-keyframes fadeIn {
+  @include keyframe-fadeIn;
+}
+@-webkit-keyframes fadeIn {
+  @include keyframe-fadeIn;
+}
+@-o-keyframes fadeIn {
+  @include keyframe-fadeIn;
+}
+@-ms-keyframes fadeIn {
+  @include keyframe-fadeIn;
+}
+@keyframes fadeIn {
+  @include keyframe-fadeIn;
+}
+@mixin fadeIn( $arg ) {
+  $keyframe-name:fadeIn;
+  $duration:$arg;
+  @each $p in $prefix {
+    #{$p}animation:$keyframe-name $duration;
+  }
+}
+
+body {
+    @include fadeIn(1s);
+}
+
+.flex {
+        .sub-menu {
+            li {
+                display: none;
+            }
+        }
+    }
+main {
+    background-image: url('../../dist/images/contact/employees.jpeg');
+    background-repeat: no-repeat;
+    background-size: 750px 100%;
+    background-position: right;
+    height: 100%;
+    overflow-y: hidden;
+    form {
+    height: 483px;
+    label {
+        color: $gold;
+    }
+    textarea {
+        width: 60%;
+    }
+    .pd-tp {
+        padding-top: 4em;
+        .wd-div {
+            // width: 56%;
+        }
+    }
+    
+}
+}
