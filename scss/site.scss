@@ -9,6 +9,7 @@ $orange: #F7941E;
 $grey: #818285;
 $light-grey: #b3b3b3;
 $light-grey-2: #e6e6e6;
+$grey-variant: #DFE1E0;
 $white: #F3F3F3;
 $copper-red: #b87333;
 $gold: #DAA45C;
@@ -56,7 +57,7 @@ body {
 
 .main-header {
     height: 440px;
-    background-color: $light-grey-2;
+    background-color: $grey-variant;
     .pusher {
         padding-top: 1.8rem;
     }
