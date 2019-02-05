@@ -7,6 +7,7 @@
 // Global Var //
 $orange: #F7941E;
 $grey: #818285;
+$dark-grey: #78797B;
 $light-grey: #b3b3b3;
 $light-grey-2: #e6e6e6;
 $grey-variant: #DFE1E0;
@@ -17,7 +18,10 @@ $goldish: #FFF4CA;
 $orangish: #D46E50;
 $yellow-var:#F0DDB3;
 $brown: #403A34;
+$brown-var: #6D5546;
+$black: #2A2827;
 $blue: #00B8CA;
+
 
 // Mixin //
 $prefix:'-moz-', '-webkit-', '-o-', '-ms-', '';
@@ -73,9 +77,9 @@ body {
               text-align: center;
               margin-top: 2px;
               padding-top: 4px;
-              color: $grey;
+              color: $dark-grey;
               &:hover {
-                  color: $blue;
+                  color: $orange;
                  -webkit-transition-duration: 0.5s;
                 transition-duration: 0.5s;
                 -webkit-transition-property: color;
@@ -89,10 +93,8 @@ body {
               }
              li {
                 border-left: 2px solid $grey;
-                // color: $grey;
                font-family: 'Raleway';
                font-weight: bold;
-                // margin-top: -1px;
                 letter-spacing: 2px;
                 padding-top: 4px;
              }
@@ -103,8 +105,8 @@ body {
      
     .nav-header {
         height: 360px;
-        border-top:4px double $light-grey;
-        border-bottom:4px double $light-grey;
+        border-top:6px double $light-grey;
+        border-bottom:6px double $light-grey;
         text-align: center;
         a {
             text-decoration: none;
@@ -112,14 +114,13 @@ body {
         img {
             margin-top: 10%;
             margin-left: -12%;
-            margin-right: 14%;
             height: 160px;
         }
     .nav-logo {
-        margin-left: 10%;
-          #bc-title {
+      margin-left: 12%;
+        #bc-title {
         color: $grey;
-        font-family: 'Italiana';
+        font-family: 'Raleway';
         font-size: 3.8em;
         letter-spacing: 2px;
         position: relative;
@@ -134,13 +135,49 @@ body {
         letter-spacing: 2px;
         position: relative;
         top: -1rem;
-        left: -26%;
+        left: -15%;
         }
     }
-       
     }
    
 }
 
-// Slider Container //
 
+// Footer //
+footer {
+  // display: flex;
+  padding: 20px 0;
+  
+.social-footer {
+
+}
+.social-footer-connect {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  margin-top: 5px;
+  justify-content: space-evenly;
+ 
+ .flex-items {
+   font-family: 'Raleway';
+  font-size: 1em;
+  font-weight: bold; 
+  text-transform: uppercase;
+  align-self: center;
+  margin: 0;
+  padding: 0;
+ }
+  a {
+    color: $black;
+    &:hover {
+      color: $grey-variant;
+    }
+  }
+  
+
+  
+
+}
+}
+
+  

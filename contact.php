@@ -54,7 +54,7 @@
                                 <div class="row">
                                     <div class="twelve columns nav-logo">
                                         <a href="http://bestchoicekitchencabinets.ca/">
-                                            <img src="dist/images/logo/BestChoiceLogo.png" alt="Best Choice Kitchen Logo">
+                                            <img src="dist/images/logo/bckc-logo.jpg" alt="Best Choice Kitchen Logo">
                                         </a>
                                         <span id="bc-title">Best Choice</span>
                                         <span id="kc-title">Kitchen Cabinets</span>
@@ -71,17 +71,17 @@
                                         <a href="index.html">
                                             <li>HOME</li>
                                         </a>
-                                        <a href="about.html">
+                                        <a href="undercstrct.html">
                                             <li>ABOUT US</li>
                                         </a>
-                                        <a href="services.html">
+                                        <a href="undercstrct.html">
                                             <li>SERVICES</li>
                                             <ul class="sub-menu">
                                                 <li>CONSTRUCTION</li>
                                                 <li>CONSTRUCTION</li>
                                             </ul>
                                         </a>
-                                        <a href="gallery.html">
+                                        <a href="undercstrct.html">
                                             <li>GALLERY</li>
                                         </a>
                                         <a href="contact.php">
@@ -99,45 +99,62 @@
     </header>
 
     <main>
-        <div class="container">
-            <div class="eight columns">
-                <form id="form" action="/contact.php" method="POST">
-                    <div class="row pd-tp">
-                        <div class="container u-pull-left wd-div">
-                            <div class="six columns">
-                                <label for="exampleNameInput">Name</label>
-                                <input class="u-full-width" id="exampleNameInput" type="text" name="name" placeholder="Name" required />
-                            </div>
-                            <div class="six columns">
-                                <label for="exampleEmailInput">Your email</label>
-                                <input class="u-full-width" type="email" name="email" placeholder="Email" id="exampleEmailInput"
-                                    required>
-                            </div>
-                            <div class="twelve columns">
-                                <label for="exampleRecipientInput">Reason for contacting</label>
-                                <select id="exampleRecipientInput" required>
-                                    <option value="" disabled selected>Select One</option>
-                                    <option value="Option 1">Product Information</option>
-                                    <option value="Option 2">Warranty</option>
-                                    <option value="Option 3">Other</option>
-                                </select>
-                                <div class="twelve columns">
-                                    <label for="exampleMessage">Message</label>
-                                    <textarea placeholder="Message" id="exampleMessage" required></textarea>
-                                    <br>
-                                    <input class="button-primary" type="submit" value="Submit">
-                                </div>
-                            </div>
-                
-                           
-                
+            <form id="form" action="/contact.php" method="POST">
+                    <div class="container pd-tp">
+                        
+                        <div class="mail-form four columns">
+                            <label for="exampleNameInput">Name</label>
+                            <input id="exampleNameInput" type="text" name="name" placeholder="Name" required />
+                            
+                            <label for="exampleEmailInput">Your email</label>
+                            <input type="email" name="email" placeholder="Email" id="exampleEmailInput" required>
+                            
+                            <label for="exampleRecipientInput">Reason for contacting</label>
+                            <select id="exampleRecipientInput" required>
+                                <option value="" disabled selected>Select One</option>
+                                <option value="Option 1">Product Information</option>
+                                <option value="Option 2">Warranty</option>
+                                <option value="Option 3">Other</option>
+                            </select>
+                            
+                            <label for="exampleMessage">Message</label>
+                            <textarea placeholder="Message" id="exampleMessage" required></textarea>
+                            <br>
+                            <input class="button-primary" type="submit" value="Submit">
                         </div>
-                
-                </form>
-            </div>
-            
-        </div>
+                        
+                        <div class="map-embed">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2609.2322155414377!2d-122.8844341839694!3d49.15820037931787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5485d90a80e46323%3A0x33d8536be1536148!2sBest+Choice+Kitchen+Cabinets!5e0!3m2!1sen!2sca!4v1549069627887"
+                                width="500" height="420" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                         
+                       
+                    </div>
+            </form>
     </main>
+    
+
+    <section>
+            <div class="row">
+                <div class="twelve columns">
+                    <div class="flex-wr">
+                            <a href="https://www.houzz.com/pro/bestchoicekitchencabinets/__public" target="_blank">
+                                <img src="dist/images/vendor/badge_44_7@2x.png" alt="Houzz">
+                            </a>
+                            <img src="dist/images/vendor/BritishColumbia_190x72.png" alt="NKBA">
+                            <img src="dist/images/vendor/CKCA Logo.jpg" alt="CKCA">
+                            <img src="dist/images/vendor/f1-140x28.gif" alt="WorkSafe">
+                            <img src="dist/images/vendor/f2-resize.jpg" alt="Home&Garden Show">
+                            <a href="https://www.bbb.org/ca/bc/surrey/profile/cabinets/best-choice-kitchen-cabinets-0037-1276700" target="_blank">
+                                <img src="dist/images/vendor/f3.png" alt="BBB">
+                            </a>
+                            
+                    </div>
+                    
+                </div>
+            
+            </div>
+    </section>
 
 <!-- // PHP Sanitizing // -->
 <?php 
