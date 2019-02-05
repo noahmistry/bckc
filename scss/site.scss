@@ -147,11 +147,10 @@ body {
 footer {
   // display: flex;
   padding: 20px 0;
+ 
   
-.social-footer {
-
-}
 .social-footer-connect {
+   background: $dark-grey;
   display: flex;
   flex-direction: row;
   padding: 10px;
